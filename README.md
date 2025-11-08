@@ -21,8 +21,9 @@ cd techflow-app
 
 2. Instala las dependencias:
 
-````bash
+```bash
 cd root-shell
+```
 
 ```bash
 git clone https://github.com/BrennisC/techflow-app.git
@@ -67,5 +68,17 @@ yarn create single-spa
 ? Organization name (can use letters, numbers, dash or underscore) techflow
 ? Project name (can use letters, numbers, dash or underscore) techflowapp
 Initialized empty Git repository in C:/practica/techflow-app/apps/mfe-navbar/.git/
+
 ```
-````
+
+5. Para correr la app principal (root-shell):
+
+```bash
+yarn start
+```
+
+5. Para correr la app principal (app standalone):
+
+```bash
+yarn start:standalone
+```
