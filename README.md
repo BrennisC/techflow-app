@@ -27,7 +27,8 @@ cd root-shell
 ```bash
 git clone https://github.com/BrennisC/techflow-app.git
 cd techflow-app
-````
+
+```
 
 2. Instala las dependencias:
 
@@ -67,3 +68,4 @@ yarn create single-spa
 ? Project name (can use letters, numbers, dash or underscore) techflowapp
 Initialized empty Git repository in C:/practica/techflow-app/apps/mfe-navbar/.git/
 ```
+````
