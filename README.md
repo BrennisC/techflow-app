@@ -48,7 +48,7 @@ yarn create single-spa
 
 ? Directory for new project root-shell
 ? Select type to generate single-spa root config
-? Which package manager do you want to use? pnpm
+? Which package manager do you want to use? yarn
 ? Will this project use Typescript? Yes
 ? Would you like to use single-spa Layout Engine Yes
 ? Organization name (can use letters, numbers, dash or underscore) techflow
@@ -62,7 +62,7 @@ yarn create single-spa
 ? Directory for new project apps/mfe-navbar
 ? Select type to generate single-spa application / parcel
 ? Which framework do you want to use? react
-? Which package manager do you want to use? pnpm
+? Which package manager do you want to use? yarn
 ? Will this project use Typescript? Yes
 ? What module format should this microfrontend be bundled to? esm
 ? Organization name (can use letters, numbers, dash or underscore) techflow
