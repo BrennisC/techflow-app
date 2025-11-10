@@ -4,7 +4,7 @@ const singleSpaDefaults = require("webpack-config-single-spa-react-ts");
 module.exports = (webpackConfigEnv, argv) => {
   const defaultConfig = singleSpaDefaults({
     orgName: "techflow",
-    projectName: "navbar",
+    projectName: "marketplce",
     webpackConfigEnv,
     argv,
     outputSystemJS: false,
@@ -12,7 +12,7 @@ module.exports = (webpackConfigEnv, argv) => {
 
   return merge(defaultConfig, {
     devServer: {
-      port: 8081,
+      port: 8083,
     },
   });
 };

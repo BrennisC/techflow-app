@@ -23,7 +23,8 @@
       }
     }
   </script>
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@6.0.3/lib/es2015/esm/single-spa.min.js" as="module">
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@6.0.3/lib/es2015/esm/single-spa.min.js" as="script"
+    crossorigin="anonymous">
 
   <!-- Add your organization's prod import map URL to this script's src  -->
   <!-- <script type="injector-importmap" src="/importmap.json"></script> -->
@@ -34,7 +35,8 @@
       "imports": {
         "@techflow/root-config": "//localhost:9000/techflow-root-config.js",
         "@single-spa/welcome": "https://cdn.jsdelivr.net/npm/single-spa-welcome/dist/single-spa-welcome.min.js",
-        "@techflow/navbar":"http://localhost:8081/techflow-navbar.js"
+        "@techflow/navbar": "http://localhost:8081/techflow-navbar.js",
+        "@techflow/marketplce": "http://localhost:8083/techflow-marketplce.js"
       }
     }
   </script>
@@ -51,9 +53,15 @@
   </noscript>
   <main></main>
   <script>
-    window.importMapInjector.initPromise.then(() => {
+    if (window.importMapInjector && window.importMapInjector.initPromise) {
+      window.importMapInjector.initPromise.then(() => {
+        import('@techflow/root-config');
+      });
+    } else {
+      // Fallback if importMapInjector is not available
+      console.error('importMapInjector not available, trying to load root config directly');
       import('@techflow/root-config');
-    });
+    }
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>

@@ -1,4 +1,4 @@
-import NavApp from "./components/NavApp";
+import ProductList from './components/ProductList';
 import './services/cartService'; // Initialize cart service
 
 interface RootProps {
@@ -7,8 +7,8 @@ interface RootProps {
 
 export default function Root(props: RootProps) {
   return (
-    <>
-      <NavApp />
-    </>
-  )
+    <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
+      <ProductList />
+    </div>
+  );
 }
