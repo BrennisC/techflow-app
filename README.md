@@ -7,7 +7,7 @@ Aplicación web moderna construida con tecnologías de vanguardia.
 ## Requisitos del Sistema
 
 - Node.js (versión 16 o superior)
-- npm o yarn
+- npm o yarn o pnpm
 - Git
 
 ## Instalación
@@ -66,7 +66,7 @@ yarn create single-spa
 ? Will this project use Typescript? Yes
 ? What module format should this microfrontend be bundled to? esm
 ? Organization name (can use letters, numbers, dash or underscore) techflow
-? Project name (can use letters, numbers, dash or underscore) techflowapp
+? Project name (can use letters, numbers, dash or underscore) navbar
 Initialized empty Git repository in C:/practica/techflow-app/apps/mfe-navbar/.git/
 
 ```

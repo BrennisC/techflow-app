@@ -1,5 +1,6 @@
 const { merge } = require("webpack-merge");
 const singleSpaDefaults = require("webpack-config-single-spa-react-ts");
+const path = require("path");
 
 module.exports = (webpackConfigEnv, argv) => {
   const defaultConfig = singleSpaDefaults({
@@ -14,5 +15,15 @@ module.exports = (webpackConfigEnv, argv) => {
     devServer: {
       port: 8083,
     },
+    resolve: {
+        modules: [
+            path.resolve(__dirname, 'node_modules'),
+            'node_modules'
+        ],
+        alias: {
+            react: path.resolve(__dirname, 'node_modules/react'),
+            "react-dom": path.resolve(__dirname, 'node_modules/react-dom'),
+        }
+    }
   });
 };

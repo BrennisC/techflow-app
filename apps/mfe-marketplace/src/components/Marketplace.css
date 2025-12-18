@@ -1,0 +1,147 @@
+.marketplace-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  font-family: 'Plus Jakarta Sans', 'Inter', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+/* Header */
+.marketplace-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.5);
+}
+
+.marketplace-header h1 {
+  font-size: 3.5rem;
+  color: #111827;
+  margin: 0 0 1rem 0;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #111827 0%, #4b5563 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.marketplace-header p {
+  font-size: 1.25rem;
+  color: #6b7280;
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Category Tabs */
+.category-tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+  background: #f3f4f6;
+  border-radius: 99px;
+  display: inline-flex;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.category-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background: transparent;
+  border: none;
+  border-radius: 99px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.category-tab:hover {
+  color: #111827;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.category-tab.active {
+  background: white;
+  color: #2563eb;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.category-tab.active:hover {
+  background: white;
+  color: #1d4ed8;
+}
+
+/* Content */
+.marketplace-content {
+  min-height: 500px;
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .marketplace-container {
+    padding: 1.5rem;
+  }
+
+  .marketplace-header h1 {
+    font-size: 2.25rem;
+  }
+
+  .category-tabs {
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+    transform: none;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: none;
+    gap: 0.75rem;
+  }
+
+  .category-tab {
+    width: 100%;
+    justify-content: center;
+    background: white;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  }
+  
+  .category-tab:hover {
+    background: #f9fafb;
+  }
+
+  .category-tab.active {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+  }
+  
+  .category-tab.active:hover {
+      background: #1d4ed8;
+      color: white;
+  }
+}
+
+@media (max-width: 480px) {
+  .marketplace-header h1 {
+    font-size: 1.875rem;
+  }
+  
+  .marketplace-header p {
+    font-size: 1rem;
+  }
+}
+

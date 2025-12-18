@@ -1,10 +1,13 @@
 import { registerApplication, start } from "single-spa";
 import {
   constructApplications,
-  constructRoutes,
   constructLayoutEngine,
+  constructRoutes,
 } from "single-spa-layout";
 import microfrontendLayout from "./microfrontend-layout.html";
+
+// Importar stores globales para comunicación entre microfrontends
+import "./global/globalSearchStore";
 
 const routes = constructRoutes(microfrontendLayout);
 const applications = constructApplications({

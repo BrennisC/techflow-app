@@ -1,4 +1,5 @@
-import ProductList from './components/ProductList';
+import { BrowserRouter } from "react-router-dom";
+import Marketplace from './components/Marketplace';
 import './services/cartService'; // Initialize cart service
 
 interface RootProps {
@@ -8,7 +9,9 @@ interface RootProps {
 export default function Root(props: RootProps) {
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#f9fafb' }}>
-      <ProductList />
+      <BrowserRouter basename="tienda">
+        <Marketplace />
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 {
-  "name": "@techflow/marketplce",
+  "name": "@techlflow/login",
   "scripts": {
-    "start": "webpack serve --port 8082",
+    "start": "webpack serve --port 8081",
     "start:standalone": "webpack serve --env standalone",
     "build": "concurrently yarn:build:*",
     "build:webpack": "webpack --mode=production",
@@ -52,6 +52,7 @@
     "@types/react-dom": "^17.0.9",
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
+    "firebase": "^12.6.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.9.6",
@@ -59,6 +60,6 @@
     "single-spa": "^5.9.3",
     "single-spa-react": "^6.0.2"
   },
-  "types": "dist/techflow-marketplce.d.ts",
+  "types": "dist/techlflow-login.d.ts",
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

@@ -6,22 +6,22 @@
 
   -->
 
-  <!-- Example layouts you might find helpful:
-
-  <nav>
-    <application name="@org/navbar"></application>
-  </nav>
-  <route path="settings">
-    <application name="@org/settings"></application>
+  <route path="/">
+    <application name="@techflow/navbar"></application>
   </route>
 
-  -->
-
   <main>
-    <route default>
-      <application name="@techflow/navbar"></application>
+    <redirect from="/" to="/login"></redirect>
+    <redirect from="/tienda/login" to="login"></redirect>
+    <route path="login">
+      <application name="@techflow/login"></application>
+    </route>
+    <route path="/tienda">
       <application name="@techflow/marketplce"></application>
-
     </route>
   </main>
+
 </single-spa-router>
+
+
+</body>

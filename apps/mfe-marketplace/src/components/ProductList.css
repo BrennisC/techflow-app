@@ -23,6 +23,44 @@
   margin: 0;
 }
 
+.search-results-info {
+  font-size: 0.95rem;
+  color: #3b82f6;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background-color: #eff6ff;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+/* Sin resultados */
+.no-results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.no-results-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.no-results h3 {
+  font-size: 1.5rem;
+  color: #374151;
+  margin: 0 0 0.5rem 0;
+}
+
+.no-results p {
+  color: #6b7280;
+  margin: 0;
+}
+
 .loading-spinner {
   display: flex;
   flex-direction: column;
